@@ -1,8 +1,25 @@
 aid: moat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/moat.png
 name: Moat
-description: Moat is a company surfaced as a portfolio company of insight-partners, mayfield and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Moat was an advertising measurement and analytics company, backed by Insight
+  Venture Partners and Mayfield, that measured ad viewability, attention, and brand
+  safety across digital and video advertising. Oracle acquired Moat in 2017 and folded
+  it into Oracle Advertising (Oracle Moat / Oracle Data Cloud). The independent moat.com
+  brand no longer operates a standalone developer program: www.moat.com now 301-redirects
+  to oracle.com/advertising, and the bare moat.com host no longer negotiates TLS. This
+  profile is retained in the API Evangelist network as an acquired/absorbed company
+  lead with no independent public API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/moat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +28,21 @@ x-backed-by:
 - mayfield
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: oracle
+x-acquired-year: 2017
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Advertising
+- Analytics
+- Ad Measurement
+- Ad Viewability
+- Brand Safety
+- Marketing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/moat-domain-security.yml
 - type: Website
-  url: https://moat.com/
+  url: https://www.moat.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
